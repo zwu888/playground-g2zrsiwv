@@ -1,19 +1,15 @@
-# Welcome!
-
-This C++ template lets you get started quickly with a simple one-page playground.
-
+# description: 
+ The operands to the comma operator are evaluated from left to right.  The value of the left hand expression is discarded.  The type and value of the result are the type type and value of the right hand operand.  Note: assignment takes precedence over the comma operator, so in this case x=1 is evaluated first; than x, 2, 3
 ```C++ runnable
 #include <iostream>
 
-using namespace std;
-
-int main() 
+int main(int argc, char** argv)
 {
-    cout << "Hello, World!";
-    return 0;
+  int x;
+
+  x = 1, 2, 3;
+
+  std::cout << x << std::endl;
+
+  return 0;
 }
-```
-
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), use the [Advanced C++ template](https://tech.io/select-repo/598)
